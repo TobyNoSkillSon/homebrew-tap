@@ -14,7 +14,7 @@ cask "vella" do
 
   auto_updates true
   depends_on arch: :arm64
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "Vella.app"
   binary "#{appdir}/Vella.app/Contents/Helpers/vella"
@@ -22,7 +22,7 @@ cask "vella" do
   # Vella is signed with its own certificate, not notarized: clear the download flag so Gatekeeper does not block
   # the first launch, as the curl installer does.
   postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Vella.app"]
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Vella.app"]
   end
 
   uninstall quit: "dev.vella.dictation"
