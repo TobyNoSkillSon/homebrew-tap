@@ -1,6 +1,6 @@
 cask "arsenal" do
-  version "1.0.1"
-  sha256 "5bd3622de95b305610a5c2253af74530c636257b09fa81e80d71305e2f6917d1"
+  version "1.0.2"
+  sha256 "77a2c6ca207b6ab79039246cf7ccf83aab4dc306c925693f2140a02f064009e7"
 
   url "https://github.com/TobyNoSkillSon/Arsenal/releases/download/v#{version}/Arsenal-#{version}-arm64.zip"
   name "Arsenal"
