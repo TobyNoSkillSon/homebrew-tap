@@ -1,6 +1,6 @@
 cask "vella" do
-  version "2.1.2"
-  sha256 "714481ed4917061b9a4db07a8751a87f1ab80abb00742fde58f3d8bb8001251b"
+  version "2.2.0"
+  sha256 "ff6c6ec8694354c5c10bf34a5ae990cc735c163918795f177244c3cb0122731e"
 
   url "https://github.com/TobyNoSkillSon/Vella/releases/download/v#{version}/Vella-#{version}-arm64.zip"
   name "Vella"
